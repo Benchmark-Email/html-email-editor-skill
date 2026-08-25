@@ -25,9 +25,9 @@ def _lum(hexcolor):
 def fragile_reversed_text(html):
     """Light text that depends on a background set on some OTHER element.
 
-    Observed in the Benchmark editor: a background on a distant wrapper does not
-    reliably paint, while one on the text-bearing element -- or on the cell that
-    directly contains it -- does. Light text whose only background lives further up
+    Background painting is the least reliable part of email rendering. A background
+    on a distant wrapper can drop out where one on the text-bearing element -- or on
+    the cell that directly contains it -- holds. Light text whose only background lives further up
     the tree renders light-on-white and disappears, and it looks perfect in every
     browser preview, so it reaches the inbox.
 

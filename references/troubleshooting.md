@@ -87,8 +87,8 @@ base64 images; the usual fix is hosting them.
   client inverts colors.
 - **Light text whose background lives on the surrounding `<td>` rather than on the text element
   itself.** Add `background-color` inline to the same tag as the text, or change the text to a
-  dark color. A colored `<td>` band does not reliably paint; when it drops out the section
-  renders as blank space. Browser previews never show this. Best fix is usually to rebuild the
+  dark color. A background declared only on the container can drop out in some clients, and
+  when it does the section renders as blank space. Browser previews never show this. Best fix is usually to rebuild the
   section as dark text on a light background.
 - **Any image URL that was constructed rather than retrieved.** Load it. A 404 renders as a
   broken-image icon.

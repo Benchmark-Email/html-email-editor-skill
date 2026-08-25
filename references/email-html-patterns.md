@@ -160,10 +160,11 @@ will not load the web font.
 The rule: **any element with light-colored text must carry its own `background-color`.** A
 background on the surrounding `<td>` is not enough to rely on.
 
-Observed in the Benchmark editor: a colored `<td>` band does not reliably paint, while a
-background set on the text-bearing element does. When the band drops out, light text lands on
-white and the whole section renders as blank space — and it looks perfect in every browser
-preview, so it reaches the inbox unnoticed.
+Background painting is the least reliable part of email rendering, and Outlook is the worst
+offender: it can drop a background declared on a container while honouring one declared on the
+text-bearing element itself. If a band drops out, light text lands on white and the whole
+section renders as blank space — and it looks correct in every browser preview, so it reaches
+the inbox unnoticed.
 
 ```html
 <tr>

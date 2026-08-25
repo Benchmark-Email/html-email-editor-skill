@@ -191,11 +191,12 @@ More patterns, including two-column stacking, VML background images, and dark-mo
 
 ## Light text, and why sections go invisible
 
-The most destructive failure in this editor, because it is invisible in every browser preview.
+The most destructive failure in email, because it is invisible in every browser preview.
 
-A colored `<td>` band does not reliably paint. When it drops out, the light text inside lands
-on white and the entire section renders as blank space — headline, body copy, all of it. The
-preview pane shows it correctly right up until send.
+Background painting is the least reliable part of email rendering, Outlook most of all. If a
+band drops out, the light text inside lands on white and the entire section renders as blank
+space — headline, body copy, all of it. A preview pane cannot warn you, because it renders the
+background correctly.
 
 **Default to dark text on light backgrounds for the whole email.** Do not build full-width
 reversed sections. Get emphasis from type scale, weight, spacing, thin rules, and small
