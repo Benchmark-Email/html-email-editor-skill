@@ -14,7 +14,7 @@ Pick one. They install the same skill.
 **[benchmark-html-email.skill](https://github.com/Benchmark-Email/html-email-editor-skill/releases/latest/download/benchmark-html-email.skill)**
 from the latest release, then upload it in Settings. One file, nothing to unpack.
 
-**Claude Code** — clone this repository into your skills directory and restart:
+**Claude Code or Cowork** — clone this repository into your skills directory and restart:
 
 ```bash
 git clone https://github.com/Benchmark-Email/html-email-editor-skill.git ~/.claude/skills/benchmark-html-email
