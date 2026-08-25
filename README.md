@@ -8,14 +8,21 @@ Built by Benchmark Email. Free to use with a Benchmark Email account.
 
 ## Install
 
-**Claude Code** — drop the folder into your skills directory and restart:
+Pick one. They install the same skill.
+
+**Claude app** — download
+**[benchmark-html-email.skill](https://github.com/Benchmark-Email/html-email-editor-skill/releases/latest/download/benchmark-html-email.skill)**
+from the latest release, then upload it in Settings. One file, nothing to unpack.
+
+**Claude Code** — clone this repository into your skills directory and restart:
 
 ```bash
 git clone https://github.com/Benchmark-Email/html-email-editor-skill.git ~/.claude/skills/benchmark-html-email
 ```
 
-**Claude app** — download [`benchmark-html-email.skill`](https://github.com/Benchmark-Email/html-email-editor-skill/releases/latest/download/benchmark-html-email.skill)
-and upload it in Settings.
+The files in this repository *are* the skill, so you can read every rule before installing
+anything. The release is the same files packaged into a single `.skill` for the app, which cannot
+install from a folder.
 
 ## Use it
 
@@ -65,7 +72,7 @@ Roman in Outlook.
 
 | Path | What it is |
 |---|---|
-| `SKILL.md` | The skill itself |
+| `SKILL.md` | The skill itself — the rules Claude follows |
 | `references/benchmark-constraints.md` | Why each platform rule exists |
 | `references/email-html-patterns.md` | Two-column stacking, VML backgrounds, dark mode |
 | `references/troubleshooting.md` | Repairing HTML from another platform |
